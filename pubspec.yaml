@@ -1,0 +1,63 @@
+name: mlbb_assistant
+description: Помощник для Mobile Legends Bang Bang — оверлей, драфт, билды и актуальная база героев.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # Local storage
+  shared_preferences: ^2.3.3
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  path_provider: ^2.1.5
+
+  # Network
+  dio: ^5.7.0
+
+  # Auth (simple email/password – can be replaced with Firebase later)
+  # For demo we use local mock + shared_preferences
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.2
+  cached_network_image: ^3.4.1
+
+  # Permissions & overlay (Android-focused)
+  permission_handler: ^11.3.1
+
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.3
+  build_runner: ^2.4.14
+  isar_generator: ^3.1.0+1
+  custom_lint: ^0.7.0
+  riverpod_lint: ^2.6.3
+  mockito: ^5.4.4
+  build_runner: ^2.4.14
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
